@@ -1,11 +1,12 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     height: 100vh;
     background-image: url("../images/wall.png");
     justify-content: space-between;
 }
-.menu{
+
+.menu {
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
@@ -15,7 +16,8 @@
     color: rgb(255, 255, 255);
     border-bottom: 5px solid rgb(255, 215, 0);
 }
-.menu__footer{
+
+.menu__footer {
     display: inline-flex;
     justify-content: space-evenly;
     align-items: center;
@@ -26,62 +28,132 @@
     border-top: 5px solid rgb(255, 215, 0);
     margin-top: 20px;
 }
-.red{
+
+.red {
     color: rgb(255, 0, 0);
     margin-bottom: 1rem;
 }
-.menu__lives{
+
+.menu__lives {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
-.menu__time, .menu__score, .menu__best-score, .menu__total, .menu__level{
+
+.menu__time,
+.menu__score,
+.menu__best-score,
+.menu__total,
+.menu__level {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.panel{
+
+.panel {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
 }
-.panel__row{
+
+.panel__row {
     display: flex;
 }
-.square{
+
+.square {
     display: flex;
     width: 150px;
     height: 150px;
     background-color: rgb(128, 183, 231);
     border: 1px solid rgb(0, 0, 0);
 }
-.enemy{
+
+.enemy {
     background-image: url("../images/Ralph02.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-.hitEnemy{
+
+.hitEnemy {
     background-color: brown;
     background-image: url("../images/Ralph01.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
-@media screen and (max-width: 600px){
-    .square{
+
+@media screen and (max-width: 600px) {
+    .square {
         width: 100px;
         height: 100px;
     }
+
     h2 {
         font-size: .8rem;
     }
+
     img {
         width: 40px;
     }
-    .menu__lives{
+
+    .menu__lives {
         flex-direction: column;
     }
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.visible {
+    display: flex;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    padding: 20px;
+    border: 5px solid rgb(255, 215, 0);
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.modal-content h2 {
+    color: rgb(255, 0, 0);
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#modal-btn {
+    background-color: rgb(255, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#modal-btn:hover {
+    background-color: rgb(200, 0, 0);
 }

@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detona Ralph</title>
-    <link rel="stylesheet" href="./scr/styles/reset.css">
-    <link rel="stylesheet" href="./scr/styles/main.css">
+    <link rel="stylesheet" href="./src/styles/reset.css">
+    <link rel="stylesheet" href="./src/styles/main.css">
 
-    <link rel="shortcut icon" href="./scr/images/favicon.jpg" type="image/x-icon">
-    
+    <link rel="shortcut icon" href="./src/images/favicon.jpg" type="image/x-icon">
+
 </head>
+
 <body>
     <div class="container">
         <div class="menu">
@@ -22,7 +24,7 @@
                 <h2 id="score">0</h2>
             </div>
             <div class="menu__lives">
-                <img src="./scr/images/player.png" alt="" srcset="">
+                <img src="./src/images/player.png" alt="" srcset="">
                 <h2 id="lives">3x</h2>
             </div>
         </div>
@@ -57,7 +59,17 @@
                 <h2 id="total-score">0</h2>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2 id="modal-title">Game Over!</h2>
+                <p id="modal-message">Your score: 0</p>
+                <button id="modal-btn">Restart</button>
+            </div>
+        </div>
     </div>
-    <script defer src="./scr/scripts/engine.js"></script>
+    <script defer src="./src/scripts/engine.js"></script>
 </body>
+
 </html>

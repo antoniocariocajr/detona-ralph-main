@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detona Ralph</title>
+    <link rel="stylesheet" href="./scr/styles/reset.css">
+    <link rel="stylesheet" href="./scr/styles/main.css">
+
+    <link rel="shortcut icon" href="./scr/images/favicon.jpg" type="image/x-icon">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu__time">
+                <h2 class="red">Time Left</h2>
+                <h2 id="time-left">0</h2>
+            </div>
+            <div class="menu__score">
+                <h2 class="red">Your Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu__lives">
+                <img src="./scr/images/player.png" alt="" srcset="">
+                <h2 id="lives">3x</h2>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel__row">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+            <div class="panel__row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+            <div class="panel__row">
+                <div class="square enemy" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+        <div class="menu__footer">
+            <div class="menu__level">
+                <h2 class="red">Level</h2>
+                <h2 id="level">1</h2>
+            </div>
+            <div class="menu__best-score">
+                <h2 class="red">Best Score</h2>
+                <h2 id="best-score">0</h2>
+            </div>
+            <div class="menu__total">
+                <h2 class="red">Total Score</h2>
+                <h2 id="total-score">0</h2>
+            </div>
+        </div>
+    </div>
+    <script defer src="./scr/scripts/engine.js"></script>
+</body>
+</html>
